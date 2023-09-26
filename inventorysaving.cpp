@@ -52,17 +52,6 @@ vector<string> split_str(string str, char theChar) {
 class Timer {
     bool clear = false;
 public:
-    void setTimeout(templateFunc function, int delay) {
-        this->clear = false;
-        thread t([=]() {
-            if(this->clear) return;
-                std::this_thread::sleep_for(std::chrono::milliseconds(delay));
-            if(this->clear) return;
-                function();
-        });
-        t.detach();
-    }
-
 	void setInterval(templateFunc function, int interval) {
         this->clear = false;
         thread t([=]() {
