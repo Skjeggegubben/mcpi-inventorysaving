@@ -1,5 +1,6 @@
 # mcpi-inventorysaving
-Inventory saving for mcpi when on dedicated/external server.
+Inventory saving mod for handling the saving and loading of inventory in mcpi when on dedicated/external server.
+Saves item data to file with server ip in 1min. intervals during game play, loads only once when entering server. 
 
 Made with lots of help from Bigjango, starting point was his old inventorysaving.cpp which could load inventory from a file on game start.
 
