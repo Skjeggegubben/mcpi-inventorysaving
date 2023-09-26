@@ -188,7 +188,7 @@ void showInfo(string text){
 
 //Function with multiple safeguards to prevent doing stuff we can't do..
 bool canDoStuff(){ 
-    //If server string is still "" then it means either connected to local game, or not in world yet
+    //If server string is still "" then it means not connected, or maybe not in world yet
     if (server == "") return false;
     // Get the level, use it to determine if connected to a server, maybe also ensures that game is loaded / still running? server will still hold the IP after leaving a game.. 
     unsigned char *level = *(unsigned char **) (get_minecraft() + Minecraft_level_property_offset);
