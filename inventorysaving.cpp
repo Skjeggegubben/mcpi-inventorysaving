@@ -30,7 +30,7 @@ void saveStuff();
 void loadStuff();
 bool canDoStuff();
 unsigned char *minecraft;
-string server = "";
+static string server = "";
 string inventoryString = "";
 
 
