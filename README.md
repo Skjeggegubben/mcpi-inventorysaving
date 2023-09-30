@@ -6,7 +6,7 @@ Made with lots of help from Bigjango, starting point was his old inventorysaving
 
 Compile your own and smoke it:
 
-sudo apt install g++-arm-linux-gnueabihf
+sudo apt install g++-arm-linux-gnueabihf\n
 sudo apt install gcc-arm-linux-gnueabihf
 
 mkdir build
